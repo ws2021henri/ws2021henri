@@ -4,6 +4,7 @@
 <nav>
   <a href=".">0</a>
   <a href="1">1</a>
+  <a href="2">2</a>
 </nav>
 
 <style>

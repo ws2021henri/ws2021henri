@@ -41,7 +41,8 @@
 <div class="container">
   <div class="pane">
     <div class="pane-header"
-      ><div>Data excerpt: a film in its category<br />(JSON text file)</div
+      ><div
+        >Data excerpt: a film<br />(plain text file, with JSON structure)</div
       ></div
     >
     <div class="pane-content noscrollbar"

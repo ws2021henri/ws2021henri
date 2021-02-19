@@ -2,7 +2,7 @@
   import { goto } from "@sapper/app";
   import Nav from "../components/Nav.svelte";
 
-  function alert(e) {
+  function hotkeys(e) {
     let target = e.key;
     if (!isNaN(Number(target))) {
       if (target === "0") target = ".";
@@ -11,7 +11,7 @@
   }
 </script>
 
-<svelte:window on:keyup={alert} />
+<svelte:window on:keyup={hotkeys} />
 <Nav />
 <main>
   <slot />
