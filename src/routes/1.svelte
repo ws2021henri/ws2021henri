@@ -44,7 +44,9 @@
       ><div>Data excerpt: a film in its category<br />(JSON text file)</div
       ></div
     >
-    <div class="pane-content"><Highlight language={json} {code} /></div>
+    <div class="pane-content noscrollbar"
+      ><Highlight language={json} {code} /></div
+    >
   </div>
 
   <div class="pane">
@@ -58,43 +60,4 @@
 </div>
 
 <style>
-  :global(pre) {
-    white-space: pre-wrap;
-    margin: 0;
-    margin: 12px;
-    background-color: inherit !important;
-  }
-
-  .pane {
-    position: relative;
-    width: 50%;
-    height: 95vh;
-    max-height: 95vh;
-    flex: 1 1 auto;
-    align-self: auto;
-  }
-
-  .pane-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: sticky;
-    position: -webkit-sticky;
-    padding: 0;
-    margin: 0;
-    height: 10vh;
-    font-size: 1.5rem;
-    text-align: center;
-    background-color: #222;
-    color: #fff;
-    box-sizing: border-box;
-    z-index: 1000;
-  }
-
-  .pane-content {
-    position: relative;
-    width: 100%;
-    height: 89vh;
-    overflow: auto;
-  }
 </style>

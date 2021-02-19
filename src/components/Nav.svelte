@@ -2,7 +2,7 @@
 </script>
 
 <nav>
-  <a href="/">Start</a>
+  <a href=".">0</a>
   <a href="1">1</a>
 </nav>
 
@@ -13,8 +13,9 @@
   }
 
   a {
+    font-size: 1.125rem;
     display: inline-box;
-    padding: 0 3px;
+    padding: 0 8px 4px 8px;
     color: #999;
     text-decoration: none;
   }
