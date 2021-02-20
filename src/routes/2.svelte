@@ -3,6 +3,8 @@
   import { json } from "svelte-highlight/languages";
   import { a11yDark } from "svelte-highlight/styles";
 
+  let paneVisible = [true, false, true];
+
   let code = `{
   "Séances spéciales": {
     "films": [
@@ -32,14 +34,24 @@
     ]
   }
 }`;
+
+  function hotkeys(e) {
+    let key = e.key;
+    if (key === "A" || key === "a") paneVisible[0] = !paneVisible[0];
+    if (key === "Z" || key === "z") paneVisible[1] = !paneVisible[1];
+    if (key === "E" || key === "e") paneVisible[2] = !paneVisible[2];
+  }
 </script>
 
+<svelte:window on:keyup={hotkeys} />
+
 <svelte:head>
+  <title>Data and output</title>
   {@html a11yDark}
 </svelte:head>
 
 <div class="container">
-  <div class="pane">
+  <div class="pane" class:visible={paneVisible[0]}>
     <div class="pane-header"
       ><div>Data<br />(plain text file / JSON structure)</div></div
     >
@@ -48,7 +60,12 @@
     >
   </div>
 
-  <div class="pane">
+  <div class="pane" class:visible={paneVisible[1]}>
+    <div class="pane-header"><div>Logic</div></div>
+    <div class="pane-content">Coco</div>
+  </div>
+
+  <div class="pane" class:visible={paneVisible[2]}>
     <div class="pane-header"><div>HENRI website</div></div>
     <iframe
       class="pane-content"
@@ -59,4 +76,10 @@
 </div>
 
 <style>
+  .pane {
+    display: none;
+  }
+  .pane.visible {
+    display: block;
+  }
 </style>

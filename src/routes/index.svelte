@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>Building HENRI</title>
+</svelte:head>
+
 <div class="container">
   <div class="content">
     <div class="super"
@@ -6,6 +10,8 @@
       ></div
     >
     <h1>HENRI</h1>
+
+    <div class="url">www.cinematheque.fr/henri</div>
   </div>
 </div>
 
@@ -30,5 +36,11 @@
     font-weight: 500;
     font-size: 12rem;
     line-height: 11rem;
+  }
+
+  .url {
+    margin-top: 24px;
+    font-size: 2.25rem;
+    text-align: center;
   }
 </style>

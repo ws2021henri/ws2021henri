@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>Visual design</title>
+</svelte:head>
+
 <div class="container">
   <div class="pane">
     <div class="pane-header">Visual design</div>
