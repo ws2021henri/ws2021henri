@@ -1,64 +1,264 @@
-<script>
-  import { Highlight } from "svelte-highlight";
-  import { json } from "svelte-highlight/languages";
-  import { a11yDark } from "svelte-highlight/styles";
-
-  let code = `{
-  "Séances spéciales": {
-    "films": [
-      {
-        "id": 107456,
-        "title": "Reise nach Lyon",
-        "art": "Die",
-        "titleFr": "Voyage à Lyon",
-        "artFr": "Le",
-        "director": "Claudia von Alemann",
-        "year": 1981,
-        "country": "République fédérale d'Allemagne-France-Suisse",
-        "runtime": "1:52:34",
-        "version": "VOSTF",
-        "cast": "Rebecca Pauly, Jean Badin, Denise Péron, Sarah Stern",
-        "crew_details": "<p>Réalisation et scénario&nbsp;: Claudia von Alemann / Photographie&nbsp;: Hille Sagel / Musique&nbsp;: Frank Wolff / Montage&nbsp;: Monique Dartonne / Production&nbsp;: Claudia von Alemann, Alemann Filmproduktion / Interprètes&nbsp;: Rebecca Pauly (Elisabeth), Jean Badin (Fernand), Denise Péron, Sarah Stern, Maurice Garden, Pierre-Émile Le Grand</p>",
-        "synopsis": "<p>Elisabeth, jeune historienne allemande, se rend à Lyon pour marcher sur les pas de celle qui la fascine&nbsp;: Flora Tristan, écrivaine, socialiste, pionnière du féminisme au XIX<sup>e</sup> siècle. Elle connaît toute son œuvre, tous les documents d'archives, mais souhaite aller plus loin. Un siècle et demi après le passage à Lyon de son sujet d'études, Elisabeth tente de revivre son expérience de façon aussi concrète et sensorielle que possible.</p>",
-        "restoration": "<p>Restauration 2K réalisée en 2018 par Alpha-Omega Digital sous la direction de Claudia von Alemann et la Deutsche Kinemathek, à partir du négatif original 16&nbsp;mm pour l'image et du mix magnétique 16&nbsp;mm pour le son. Cette restauration a également rendue possible grâce à l'Institut Lumière, qui l'a présentée à Lyon en octobre 2018 au festival Lumière en présence de Claudia von Alemann et Rebecca Pauly. Remerciements particuliers à Thierry Frémaux, Maelle Arnaud et Martin Koerber.</p>",
-        "comment": "<p>«&nbsp;La ville n'est plus monuments mais habitants&nbsp;: changement radical de la représentation urbaine à l'écran. Alemann exauce les vœux d'un Grémillon&nbsp;: &quote;L'expression cinématographique [...] me paraît peu liée à cette fraude internationale des monuments historiques&nbsp;–&nbsp;qui si elle donne une personnalité officielle aux grandes villes n'exprime pas les mille visages populaires que [la ville] prodigue aux cœurs de ceux qui l'aiment.&quote;&nbsp;» (Philippe Roger, <em>Lyon&nbsp;: Lumière des ombres, 100 ans de cinéma</em>)</p><p><em>Le Voyage à Lyon</em> a été tourné en août 1978 puis en août 1979 par la réalisatrice allemande Claudia von Alemann. Cinéaste familière du documentaire et de la sociologie, c'est son attrait pour l'histoire ouvrière qui l'a fait s'intéresser d'une part à la ville de Lyon et à ses canuts, ces ouvriers de la soie dont les révoltes successives entre 1831 et 1848 comptent parmi les plus grandes insurrections sociales de France, et d'autre part à Flora Tristan, militante féministe et socialiste du début du XIX<sup>e</sup> siècle.</p><p>Si le point de départ de son film est sa lecture des mémoires de l'écrivaine révolutionnaire rédigées en 1844 lors de son tour de France, et en particulier son passage à Lyon qui l'a fortement impressionnée, elle va l'orienter sur une jeune femme habitée par Flora Tristan et non sur la figure de Flora Tristan elle-même. Cela donne un film sur une ville, sur une étrangère qui la découvre et l'arpente à la recherche d'un passé dont elle veut saisir la trace, mais dont l'esprit est accaparé par une histoire d'amour laissée en Allemagne. Peu de choses en définitive sur la militante Flora Tristan, mais une caméra qui offre une ville qu'elle découvre en la filmant. Le Lyon de la fin des années 1970, que l'on reconnaît et qui pourtant semble disparu, qu'il est précieux de voir imprimé par le grain du 16&nbsp;mm. Quel plaisir, cette déambulation dans les traboules des pentes de la Croix-Rousse, sur la place des Terreaux alors que la fontaine Bartholdi faisait face à l'hôtel de ville et non au palais Saint-Pierre, dans le quartier Saint-Paul et face à lui Saint-Vincent, ou sur les quais de Saône.</p><p>C'est la Deutsche Kinemathek de Berlin qui fut à l'initiative de la restauration, et c'est tout naturellement que l'Institut Lumière, la cinémathèque de Lyon, s'y est associé pour célébrer en retour celles (le film est profondément féminin) qui ont célébré sa ville.</p><p>Maelle Arnaud</p>",
-        "vimeo": "509703806",
-        "isCatFilm": false,
-        "status": 2,
-        "datePublished": "2021-02-17",
-        "dateUnpublished": "2021-03-16",
-        "isPick": true
-      }
-    ]
-  }
-}`;
-</script>
-
-<svelte:head>
-  {@html a11yDark}
-</svelte:head>
-
 <div class="container">
   <div class="pane">
-    <div class="pane-header"
-      ><div
-        >Data excerpt: a film<br />(plain text file, with JSON structure)</div
-      ></div
-    >
-    <div class="pane-content noscrollbar"
-      ><Highlight language={json} {code} /></div
-    >
-  </div>
+    <div class="pane-header">Visual design</div>
+    <div class="pane-content">
+      <div class="grid-container">
+        <div class="colors1">
+          <div class="block" style="background-color:#fff;" />
+          <div class="block" style="background-color:#3cf;" />
+        </div>
 
-  <div class="pane">
-    <div class="pane-header"><div>HENRI website</div></div>
-    <iframe
-      class="pane-content"
-      title=""
-      src="https://www.cinematheque.fr/henri/film/107456-le-voyage-a-lyon-claudia-von-alemann-1981/"
-    /></div
-  >
+        <!-- <div /> -->
+        <div class="logo">
+          <svg
+            class="henri"
+            alt="HENRI"
+            viewBox="0 0 850 850"
+            xmlns="http://www.w3.org/2000/svg"
+            ><title>HENRI</title><path
+              d="M63 561l26 6 127 26 143 29 181 37 243 50h2c2 1 3 1 3 3v61l-1 2-11-3-350-87-291-73-68-18c-4 0-4 0-4-4v-29zm532 16c-4 1-8 0-12-1l-45-6c-3 0-4-2-5-4l-39-107c-1-3-3-4-6-4l-19-1c-2 0-2 1-2 3v104l-15-2-25-3c-4-1-4-1-4-5V274c0-4 0-4 4-5l68-9c13-2 25-2 38 2 18 4 30 15 39 32a162 162 0 017 95c-3 15-10 29-20 40l-14 13c-4 2-4 2-2 6l49 120 3 9zM467 359v38c0 3 0 4 3 3h27c16-2 26-11 31-26 4-12 4-24 2-35-2-10-7-17-16-21-5-2-10-3-16-3l-29 2c-2 0-2 0-2 4v38zm230 232l-17-2-43-6c-4 0-4 0-4-5V246c0-6 0-5 5-5l54-8h3c1 0 2 0 2 2v356zM349 470l-1-10c-1-23-3-45-3-68l-1-108c0-4 0-4 4-4l30-4h2v274l-27-4-8-1c-3 0-3-1-4-3l-10-33-28-94-14-51-2-4c1 29 4 59 4 88v90l-15-2-13-2c-2 0-3 0-2-2V297c0-5 0-5 5-6l24-3c3-1 3-1 4 3l33 105c8 23 13 47 20 70l1 3 1 1zm-115 16v44l-18-2-50-6c-6-1-6-1-6-7V308c0-3 0-3 3-3l67-9c3-1 3-1 3 3v38c0 3 0 3-4 4l-32 2-9 1c-3 0-3 0-3 4v37c0 4-1 4 4 4l31-1c6 0 5-1 5 4v35c0 5 1 5-4 5l-33-1c-3 0-3 0-3 3v45c0 2 0 3 3 3l38 3 8 1zm-99 32l-20-3-2-2v-81c0-1 0-2-2-2H84c-2-1-2 0-2 1v80l-18-3-1-2V323c0-5 0-5 5-5l13-2 1 5v68l2 2 9-1h15c5 0 5 0 5-5v-68c0-5 0-5 6-6l16-2v209zM787 75l-3 1-27 6-59 14-4-2c-8-10-19-13-31-10-11 4-20 11-26 21l-4 7h-3l-272 64-222 53-69 16c-5 1-4 1-4 5v25l1 3 17-3 91-17 87-17 83-16 87-16 87-17 92-18 25-5 4 5c6 7 14 11 23 10 10-1 19-5 26-12l11-15 14-2 73-14c4-1 4-1 4-5V79l-1-4zm-90 23z"
+            /></svg
+          >
+
+          <div class="tagline"
+            >Des films
+            <span class="underline">rares</span>
+            de la Cinémathèque française à voir
+            <span class="underline">en ligne</span></div
+          >
+        </div>
+
+        <div>
+          <div
+            class="block"
+            style="background: linear-gradient(90deg, #7db3af 0%, #7db3af 15%, #3cf 100%);"
+          />
+
+          <div class="half block" style="background-color:#72b7bb;" />
+          <div class="half block" style="background-color:#7db3af;" />
+          <div class="half block" style="background-color:#607b7f;" />
+          <div class="half block" style="background-color:#6b8a99;" />
+
+          <h2
+            >Le Parti des choses
+            <div class="sub">Bardot et Godard</div></h2
+          >
+
+          <h2>Sapovnela<div class="vo">საპოვნელა</div></h2>
+        </div>
+
+        <div>
+          <div
+            class="block"
+            style="background: linear-gradient(90deg, #ff406c 0%, #ff406c 15%, #ff4633 100%);"
+          />
+
+          <div class="half block" style="background-color:#ff4256;" />
+          <div class="half block" style="background-color:#a14353;" />
+          <div class="half block" style="background-color:#704352;" />
+
+          <h2 class="ispick"
+            >Les Vampires, épisode 8<div class="sub">Le Maître de la foudre</div
+            ></h2
+          ></div
+        >
+
+        <div>
+          <div
+            class="block"
+            style="background: linear-gradient(90deg, #888 0%, #888 15%, #aaa 100%);"
+          />
+          <div class="half block" style="background-color:#eee;" />
+          <div class="half block" style="background-color:#ccc;" />
+          <div class="half block" style="background-color:#999;" />
+          <div class="half block" style="background-color:#888;" />
+
+          <h2 class="archived"
+            >The Brilliant Biograph<div class="sub"
+              >Earliest Moving Images of Europe (1897-1902)</div
+            ></h2
+          >
+        </div>
+        <div class="text">
+          <!-- <h3
+            >Le mot des programmateurs / <span class="lang-en"
+              >Curators' note</span
+            ></h3
+          > -->
+          <p
+            >Nunc ac augue eu libero ultrices gravida sit amet ac est. Etiam
+            pellentesque, felis vel condimentum congue, sapien quam efficitur
+            eros, consequat maximus quam sem ut erat. Nunc sit amet pretium mi,
+            et elementum risus. Aliquam pretium scelerisque volutpat.
+            Pellentesque semper ipsum sed sagittis venenatis. Proin sit amet
+            purus a magna tincidunt accumsan in sed turpis. Aliquam vestibulum
+            odio eget odio posuere, eu tincidunt metus iaculis. Interdum et
+            malesuada fames ac ante ipsum primis in faucibus. Proin lacinia
+            rutrum vestibulum. Vestibulum elit enim, aliquet non magna id,
+            pretium viverra magna. In ut sodales turpis, at ornare neque.
+            Praesent tincidunt placerat.
+          </p></div
+        ><div class="text">
+          <p class="lang-en">
+            Maecenas tempus ante at est sagittis, sed mattis tortor porta.
+            Vivamus nec vestibulum mauris, eu vestibulum tortor. Donec arcu dui,
+            bibendum vel quam at, vehicula hendrerit leo. Integer ut arcu in
+            turpis maximus convallis vel eget metus. Nunc tempor non nisi eu
+            ultrices. Sed volutpat porta diam nec tristique. In massa metus,
+            posuere et accumsan ac, consequat in est. Pellentesque habitant
+            morbi tristique senectus et netus et malesuada fames ac turpis
+            egestas. Integer id iaculis magna. Curabitur porttitor pretium enim.
+            Etiam consequat, diam vel convallis feugiat, nulla ante pulvinar
+            urna, a semper nibh tellus ac quam.
+          </p>
+        </div>
+        <div><img class="thumb" src="thumb1.jpg" alt="Les Vampires" /></div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <style>
+  .container {
+    background-color: #444450;
+  }
+
+  .pane-content {
+    display: block;
+  }
+
+  .grid-container {
+    display: grid;
+    width: 85vw;
+    margin: 36px auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60vh 1fr 1fr;
+    gap: 36px 12px;
+    grid-template-areas:
+      ". logo logo"
+      ". . ."
+      ". . .";
+  }
+
+  /* .grid-container > * {
+    outline: solid 1px red;
+  } */
+
+  .text {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
+  .block {
+    width: 100%;
+    height: 8vw;
+    margin-bottom: 4px;
+  }
+
+  .half {
+    display: block;
+    float: left;
+    width: 20%;
+    margin-right: 4px;
+  }
+
+  .logo {
+    grid-area: logo;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  svg.henri {
+    fill: #fff;
+    height: 60%;
+    width: auto;
+    /* outline: solid 1px red; */
+    /* transform: scale(0.5); */
+  }
+
+  .tagline {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .underline {
+    display: inline-block;
+    padding-bottom: 4px;
+    border-bottom: solid 2px #3cf;
+  }
+
+  h2 {
+    clear: both;
+    padding: 12px 0 0 0;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: #7db3af;
+  }
+
+  h2 .vo {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  h2 .sub {
+    color: #607b7f;
+  }
+
+  h2.ispick {
+    color: #ff4256;
+  }
+  h2.ispick .sub {
+    color: #a14353;
+  }
+
+  h2.archived {
+    color: #eee;
+  }
+
+  h2.archived .sub {
+    color: #ccc;
+  }
+
+  /* h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+  } */
+
+  p {
+    margin: 6px 0;
+  }
+
+  .colors1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: stretch;
+  }
+
+  .colors1 .block {
+    flex: 0 0 auto;
+    height: 6vw;
+  }
+
+  img.thumb {
+    display: block;
+    width: 100%;
+    transform: scale(0.9);
+  }
+
+  .lang-en {
+    font-family: "Source Serif Pro", "Source Sans Pro", serif;
+    font-size: 0.938em;
+    font-weight: 300;
+    color: #bbb;
+  }
 </style>
