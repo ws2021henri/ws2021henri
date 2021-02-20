@@ -38,13 +38,6 @@
           <div class="half block" style="background-color:#7db3af;" />
           <div class="half block" style="background-color:#607b7f;" />
           <div class="half block" style="background-color:#6b8a99;" />
-
-          <h2
-            >Le Parti des choses
-            <div class="sub">Bardot et Godard</div></h2
-          >
-
-          <h2>Sapovnela<div class="vo">საპოვნელა</div></h2>
         </div>
 
         <div>
@@ -56,12 +49,7 @@
           <div class="half block" style="background-color:#ff4256;" />
           <div class="half block" style="background-color:#a14353;" />
           <div class="half block" style="background-color:#704352;" />
-
-          <h2 class="ispick"
-            >Les Vampires, épisode 8<div class="sub">Le Maître de la foudre</div
-            ></h2
-          ></div
-        >
+        </div>
 
         <div>
           <div
@@ -72,13 +60,36 @@
           <div class="half block" style="background-color:#ccc;" />
           <div class="half block" style="background-color:#999;" />
           <div class="half block" style="background-color:#888;" />
+        </div>
 
+        <div>
+          <h2
+            >Le Parti des choses
+            <div class="sub">Bardot et Godard</div></h2
+          >
+          <h2>Sapovnela<div class="vo">საპოვნელა</div></h2>
+        </div>
+        <div>
+          <h2 class="ispick"
+            >Les Vampires, épisode 8<div class="sub">Le Maître de la foudre</div
+            ></h2
+          >
+          <h2 class="ispick"
+            >Le Toit de la baleine<div class="vo">Het Dak van de walvis</div
+            ></h2
+          >
+        </div>
+        <div>
           <h2 class="archived"
             >The Brilliant Biograph<div class="sub"
               >Earliest Moving Images of Europe (1897-1902)</div
             ></h2
           >
+          <h2 class="archived"
+            >Dans les mailles du filet<div class="vo">Into the Net</div></h2
+          >
         </div>
+
         <div class="text">
           <!-- <h3
             >Le mot des programmateurs / <span class="lang-en"
@@ -112,7 +123,8 @@
             urna, a semper nibh tellus ac quam.
           </p>
         </div>
-        <div><img class="thumb" src="thumb1.jpg" alt="Les Vampires" /></div>
+        <div />
+        <div><img class="thumb" src="thumb3.jpg" alt="" /></div>
       </div>
     </div>
   </div>
@@ -132,10 +144,12 @@
     width: 85vw;
     margin: 36px auto;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 60vh 1fr 1fr;
-    gap: 36px 12px;
+    grid-template-rows: 60vh 1fr 1fr 1fr 1fr;
+    gap: 48px 12px;
     grid-template-areas:
       ". logo logo"
+      ". . ."
+      ". . ."
       ". . ."
       ". . .";
   }
@@ -193,7 +207,8 @@
 
   h2 {
     clear: both;
-    padding: 12px 0 0 0;
+    padding: 0;
+    margin: 24px 0;
     font-size: 2rem;
     line-height: 2rem;
     font-weight: 700;
@@ -252,7 +267,7 @@
   img.thumb {
     display: block;
     width: 100%;
-    transform: scale(0.9);
+    /* transform: scale(0.9); */
   }
 
   .lang-en {
