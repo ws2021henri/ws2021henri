@@ -136,10 +136,6 @@ pre {
   align-self: auto;
 }
 
-.pane:hover .pane-header {
-  color: #fff;
-}
-
 .pane-header {
   display: flex;
   justify-content: center;
