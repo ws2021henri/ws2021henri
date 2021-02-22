@@ -31,7 +31,6 @@ module.exports = {
     ]
   }
 }`,
-
   logic: `<svelte:head>
   <meta property="og:title" content={ogTitle} />
   <meta
@@ -44,7 +43,7 @@ module.exports = {
   <meta property="og:image:height" content="400" />
 
   <title>
-    {artTitre(film.artFr, film.titreFr)}
+    {artTitre(film.artFr, film.titleFr)}
     ({film.realisateurs},
     {film.annee}) - HENRI - La Cinémathèque française
   </title>
@@ -71,7 +70,7 @@ module.exports = {
         <Restrict isRestricted={film.restrict} isPick={film.isPick}>
           <div class="video-container">
             <iframe
-              title={artTitre(film.artFr, film.titreFr)}
+              title={artTitre(film.artFr, film.titleFr)}
               sandbox="allow-same-origin allow-scripts allow-popups"
               src="https://player.vimeo.com/video/{film.vimeo}?color={film.isPick ? 'ff4256' : '7db3af'}&texttrack=fr"
               frameborder="0"
@@ -103,41 +102,41 @@ module.exports = {
 
         <div class="titre-film">
         <h1 class="colored">
-          {@html artTitre(film.artFr, film.titreFr) + " " + ba('<div class="sous-titre-fr">', '</div>', film.sousTitreFr)}
+          {@html artTitre(film.artFr, film.titleFr) + " " + ba('<div class="sous-titre-fr">', '</div>', film.soustitleFr)}
         </h1>
-        {#if film.titreNx}
+        {#if film.titleNx}
           <div class="titre-vo colored">
-            {film.titreNx}
-            {#if film.titreVo}[{artTitre(film.artVo, film.titreVo)}]{/if}
+            {film.titleNx}
+            {#if film.title}[{artTitre(film.art, film.title)}]{/if}
           </div>
-        {:else if film.titreVo}
+        {:else if film.title}
           <div class="titre-vo colored">
-            {artTitre(film.artVo, film.titreVo)}
+            {artTitre(film.artVo, film.title)}
           </div>
         {/if}
       </div>
 
-      <div class="realisateurs">{film.realisateurs}</div>
+      <div class="realisateurs">{film.director}</div>
       <div>
-        {ba('', ' / ', film.pays)}{film.annee}
+        {ba('', ' / ', film.country)}{film.year}
         /
         {film.duree}{ba(' / ', '', film.version)}
         {#if film.isCC}<span class="iscc" />{/if}
       </div>
 
       {@html ba('<div>', '</div>', film.adaptation)}
-      {@html ba('<div>Avec ', '.</div>', film.interpretation)}
-      {@html ba('<div>Accompagnement musical par ', '.</div>', film.accompagnement)}
-      {@html ba('<div class="rem">', '</div>', film.remarque)}
+      {@html ba('<div>Avec ', '.</div>', film.cast)}
+      {@html ba('<div>Accompagnement musical par ', '.</div>', film.accompaniment)}
+      {@html ba('<div class="rem">', '</div>', film.remarl)}
       {@html ba('<div class="synopsis">', '</div>', film.synopsis)}
-      {@html ba('<div>', '</div>', film.restauration)}
+      {@html ba('<div>', '</div>', film.restoration)}
 
       {#if film.presentation && film.presentation.vimeo}
         <div class="presentation">
           <div class="video-wrapper presentation">
             <div class="video-container">
               <iframe
-                title={artTitre(film.artFr, film.titreFr)}
+                title={artTitre(film.artFr, film.titleFr)}
                 sandbox="allow-same-origin allow-scripts allow-popups"
                 src="https://player.vimeo.com/video/{film.presentation.vimeo}?color={film.isPick ? 'ff4256' : '7db3af'}&texttrack=fr"
                 frameborder="0"
@@ -158,8 +157,8 @@ module.exports = {
           {#if !(!_.isUndefined(film.isCatFilm) && film.isCatFilm === false)}
             <a
               class="catfilm colored"
-              href="https://www.cinematheque.fr/catalogues/restaurations-tirages/film.php?id={film.pk}">
-              Plus de détails sur «&nbsp;{artTitre(film.artFr, film.titreFr)}&nbsp;»
+              href="https://www.cinematheque.fr/catalogues/restaurations-tirages/film.php?id={film.id}">
+              Plus de détails sur «&nbsp;{artTitre(film.artFr, film.titleFr)}&nbsp;»
               sur le Catalogue des restaurations et tirages de la Cinémathèque
               française
             </a>

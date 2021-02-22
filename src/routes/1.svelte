@@ -12,26 +12,7 @@
           <div class="block" style="background-color:#3cf;" />
         </div>
 
-        <!-- <div /> -->
-        <div class="logo">
-          <svg
-            class="henri"
-            alt="HENRI"
-            viewBox="0 0 850 850"
-            xmlns="http://www.w3.org/2000/svg"
-            ><title>HENRI</title><path
-              d="M63 561l26 6 127 26 143 29 181 37 243 50h2c2 1 3 1 3 3v61l-1 2-11-3-350-87-291-73-68-18c-4 0-4 0-4-4v-29zm532 16c-4 1-8 0-12-1l-45-6c-3 0-4-2-5-4l-39-107c-1-3-3-4-6-4l-19-1c-2 0-2 1-2 3v104l-15-2-25-3c-4-1-4-1-4-5V274c0-4 0-4 4-5l68-9c13-2 25-2 38 2 18 4 30 15 39 32a162 162 0 017 95c-3 15-10 29-20 40l-14 13c-4 2-4 2-2 6l49 120 3 9zM467 359v38c0 3 0 4 3 3h27c16-2 26-11 31-26 4-12 4-24 2-35-2-10-7-17-16-21-5-2-10-3-16-3l-29 2c-2 0-2 0-2 4v38zm230 232l-17-2-43-6c-4 0-4 0-4-5V246c0-6 0-5 5-5l54-8h3c1 0 2 0 2 2v356zM349 470l-1-10c-1-23-3-45-3-68l-1-108c0-4 0-4 4-4l30-4h2v274l-27-4-8-1c-3 0-3-1-4-3l-10-33-28-94-14-51-2-4c1 29 4 59 4 88v90l-15-2-13-2c-2 0-3 0-2-2V297c0-5 0-5 5-6l24-3c3-1 3-1 4 3l33 105c8 23 13 47 20 70l1 3 1 1zm-115 16v44l-18-2-50-6c-6-1-6-1-6-7V308c0-3 0-3 3-3l67-9c3-1 3-1 3 3v38c0 3 0 3-4 4l-32 2-9 1c-3 0-3 0-3 4v37c0 4-1 4 4 4l31-1c6 0 5-1 5 4v35c0 5 1 5-4 5l-33-1c-3 0-3 0-3 3v45c0 2 0 3 3 3l38 3 8 1zm-99 32l-20-3-2-2v-81c0-1 0-2-2-2H84c-2-1-2 0-2 1v80l-18-3-1-2V323c0-5 0-5 5-5l13-2 1 5v68l2 2 9-1h15c5 0 5 0 5-5v-68c0-5 0-5 6-6l16-2v209zM787 75l-3 1-27 6-59 14-4-2c-8-10-19-13-31-10-11 4-20 11-26 21l-4 7h-3l-272 64-222 53-69 16c-5 1-4 1-4 5v25l1 3 17-3 91-17 87-17 83-16 87-16 87-17 92-18 25-5 4 5c6 7 14 11 23 10 10-1 19-5 26-12l11-15 14-2 73-14c4-1 4-1 4-5V79l-1-4zm-90 23z"
-            /></svg
-          >
-
-          <div class="tagline"
-            >Des films
-            <span class="underline">rares</span>
-            de la Cinémathèque française à voir
-            <span class="underline">en ligne</span></div
-          >
-        </div>
-
+        <div class="video"> <img src="video.jpg" alt="Video" /></div>
         <div>
           <div
             class="block"
@@ -72,6 +53,7 @@
             <div class="sub">Bardot et Godard</div></h2
           >
           <h2>Sapovnela<div class="vo">საპოვნელა</div></h2>
+          <h2>La Chute de la maison Usher</h2>
         </div>
         <div>
           <h2 class="ispick"
@@ -81,7 +63,7 @@
           <h2 class="ispick"
             >Le Toit de la baleine<div class="vo">Het Dak van de walvis</div
             ></h2
-          >
+          > <h2 class="ispick">Surprise Boogie</h2>
         </div>
         <div>
           <h2 class="archived"
@@ -92,14 +74,10 @@
           <h2 class="archived"
             >Dans les mailles du filet<div class="vo">Into the Net</div></h2
           >
+          <h2 class="archived">Rock Hudson's Hove Movies</h2>
         </div>
 
         <div class="text">
-          <!-- <h3
-            >Le mot des programmateurs / <span class="lang-en"
-              >Curators' note</span
-            ></h3
-          > -->
           <p
             >Nunc ac augue eu libero ultrices gravida sit amet ac est. Etiam
             pellentesque, felis vel condimentum congue, sapien quam efficitur
@@ -127,8 +105,23 @@
             urna, a semper nibh tellus ac quam.
           </p>
         </div>
-        <div />
-        <div><img class="thumb" src="thumb3.jpg" alt="" /></div>
+
+        <div class="logo">
+          <svg
+            class="henri"
+            alt="HENRI"
+            viewBox="0 0 850 850"
+            xmlns="http://www.w3.org/2000/svg"
+            ><title>HENRI</title><path
+              d="M63 561l26 6 127 26 143 29 181 37 243 50h2c2 1 3 1 3 3v61l-1 2-11-3-350-87-291-73-68-18c-4 0-4 0-4-4v-29zm532 16c-4 1-8 0-12-1l-45-6c-3 0-4-2-5-4l-39-107c-1-3-3-4-6-4l-19-1c-2 0-2 1-2 3v104l-15-2-25-3c-4-1-4-1-4-5V274c0-4 0-4 4-5l68-9c13-2 25-2 38 2 18 4 30 15 39 32a162 162 0 017 95c-3 15-10 29-20 40l-14 13c-4 2-4 2-2 6l49 120 3 9zM467 359v38c0 3 0 4 3 3h27c16-2 26-11 31-26 4-12 4-24 2-35-2-10-7-17-16-21-5-2-10-3-16-3l-29 2c-2 0-2 0-2 4v38zm230 232l-17-2-43-6c-4 0-4 0-4-5V246c0-6 0-5 5-5l54-8h3c1 0 2 0 2 2v356zM349 470l-1-10c-1-23-3-45-3-68l-1-108c0-4 0-4 4-4l30-4h2v274l-27-4-8-1c-3 0-3-1-4-3l-10-33-28-94-14-51-2-4c1 29 4 59 4 88v90l-15-2-13-2c-2 0-3 0-2-2V297c0-5 0-5 5-6l24-3c3-1 3-1 4 3l33 105c8 23 13 47 20 70l1 3 1 1zm-115 16v44l-18-2-50-6c-6-1-6-1-6-7V308c0-3 0-3 3-3l67-9c3-1 3-1 3 3v38c0 3 0 3-4 4l-32 2-9 1c-3 0-3 0-3 4v37c0 4-1 4 4 4l31-1c6 0 5-1 5 4v35c0 5 1 5-4 5l-33-1c-3 0-3 0-3 3v45c0 2 0 3 3 3l38 3 8 1zm-99 32l-20-3-2-2v-81c0-1 0-2-2-2H84c-2-1-2 0-2 1v80l-18-3-1-2V323c0-5 0-5 5-5l13-2 1 5v68l2 2 9-1h15c5 0 5 0 5-5v-68c0-5 0-5 6-6l16-2v209zM787 75l-3 1-27 6-59 14-4-2c-8-10-19-13-31-10-11 4-20 11-26 21l-4 7h-3l-272 64-222 53-69 16c-5 1-4 1-4 5v25l1 3 17-3 91-17 87-17 83-16 87-16 87-17 92-18 25-5 4 5c6 7 14 11 23 10 10-1 19-5 26-12l11-15 14-2 73-14c4-1 4-1 4-5V79l-1-4zm-90 23z"
+            /></svg
+          ></div
+        >
+
+        <div class="thumbs">
+          <img class="thumb" src="thumb2.jpg" alt="" />
+          <img class="thumb" src="thumb3.jpg" alt="" />
+        </div>
       </div>
     </div>
   </div>
@@ -148,14 +141,14 @@
     width: 85vw;
     margin: 36px auto;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 60vh 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 60vh 40vh 40vh 50vh 60vh; */
     gap: 48px 12px;
     grid-template-areas:
-      ". logo logo"
+      ". video video"
       ". . ."
       ". . ."
       ". . ."
-      ". . .";
+      "thumbs thumbs thumbs";
   }
 
   /* .grid-container > * {
@@ -165,6 +158,12 @@
   .text {
     font-size: 1.125rem;
     line-height: 1.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
   }
 
   .block {
@@ -180,8 +179,40 @@
     margin-right: 4px;
   }
 
+  .video {
+    grid-area: video;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  .video > img {
+    display: block;
+    width: 90%;
+    height: auto;
+  }
+
+  .thumbs {
+    grid-area: thumbs;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: flex-start;
+  }
+
+  img.thumb {
+    flex: 0 0 auto;
+    display: block;
+    width: 40%;
+    height: auto;
+  }
+
   .logo {
-    grid-area: logo;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -191,22 +222,10 @@
   }
 
   svg.henri {
+    margin: 64px 0;
     fill: #fff;
-    height: 60%;
-    width: auto;
-    /* outline: solid 1px red; */
-    /* transform: scale(0.5); */
-  }
-
-  .tagline {
-    font-size: 1.5rem;
-    font-weight: 400;
-  }
-
-  .underline {
-    display: inline-block;
-    padding-bottom: 4px;
-    border-bottom: solid 2px #3cf;
+    width: 80%;
+    /* width: auto; */
   }
 
   h2 {
@@ -244,13 +263,6 @@
     color: #ccc;
   }
 
-  /* h3 {
-    margin: 0;
-    padding: 0;
-    font-size: 1.25rem;
-    font-weight: 600;
-  } */
-
   p {
     margin: 6px 0;
   }
@@ -266,12 +278,6 @@
   .colors1 .block {
     flex: 0 0 auto;
     height: 6vw;
-  }
-
-  img.thumb {
-    display: block;
-    width: 100%;
-    /* transform: scale(0.9); */
   }
 
   .lang-en {

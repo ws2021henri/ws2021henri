@@ -17,7 +17,7 @@
   }
 </script>
 
-<svelte:window on:keyup={hotkeys} />
+<svelte:window on:keydown={hotkeys} />
 
 <svelte:head>
   <title>Data and output</title>

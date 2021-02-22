@@ -16,7 +16,7 @@
   }
 </script>
 
-<svelte:window on:keyup={hotkeys} />
+<svelte:window on:keydown={hotkeys} />
 <Nav />
 <main>
   <slot />
