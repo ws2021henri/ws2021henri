@@ -16,13 +16,13 @@
 
 <div class="container">
   <div class="pane" class:visible={paneVisible[0]}>
-    <div class="pane-header">Day one: homepage</div>
+    <div class="pane-header">9 April 2020, day one: homepage</div>
     <div class="pane-content noscrollbar">
       <img src="henri-day-one-home.jpg" alt="Homepage" />
     </div>
   </div>
   <div class="pane" class:visible={paneVisible[1]}>
-    <div class="pane-header">Day one: film</div>
+    <div class="pane-header">9 April 2020, day one: the film</div>
     <div class="pane-content noscrollbar">
       <img src="henri-day-one-film.jpg" alt="Film" />
     </div>

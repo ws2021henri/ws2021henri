@@ -5,7 +5,7 @@
 <div class="container">
   <div class="content">
     <h1 class="fr">“Quoi de neuf sur HENRI?”</h1>
-    <h1 class="en">“What's new on HENRI?”</h1>
+    <h1 class="en">“What’s new on HENRI?”</h1>
     <div class="small"><em>Télérama</em>, 18 février 2021</div>
   </div>
 </div>
