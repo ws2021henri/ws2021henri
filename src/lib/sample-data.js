@@ -21,7 +21,6 @@ module.exports = {
         "synopsis": "<p>Lord Roderick Usher, inquiet pour sa compagne, souffrante, accueille dans sa demeure à l'atmosphère étrange et oppressante un ami d'enfance, après l'avoir appelé à l'aide.</p>",
         "restoration": "<p><em>La Chute de la maison Usher</em> a été restauré en 1997 par la Cinémathèque Royale de Belgique et la Cinémathèque française, en collaboration avec la Cineteca del Comune di Bologna, le Nederlands Filmmuseum et l'Archivo Nacional de la Imagen – Sodre (Montevideo). En 2013, le film a été restauré numériquement par la Cinémathèque française et mis en musique par Gabriel Thibaudeau d'après sa partition, interprétée par l'Octuor de France.</p>",
         "comment": "<p>«&nbsp;Tout concourt dans ce chef-d'œuvre à son unité. La maîtrise absolue du montage, du rythme où le ralenti, les surimpressions, les travellings, la caméra mobile jouent leur rôle et jamais gratuitement&nbsp;: il n'y a pas une image, un procédé technique qui ne soient là pour embellir le film&nbsp;; ils sont là pour nous impressionner dans le sens le plus noble comme les images et la cadence d'un vers. La qualité de la photographie, digne des plus grands chefs-d'œuvres du film allemand où grâce à l'orthochromatique les gris sont gris, les blancs sont blancs et les noirs d'un velouté unique...&nbsp;» (Henri Langlois, <em>Cahiers du cinéma</em>, juin 1953)</p>",
-        "videoId": "9df88fe2-091e-460a-96a9-8a7defd8d706",
         "vimeo": "438507453",
         "isCatFilm": true,
         "status": 2,

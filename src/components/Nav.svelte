@@ -2,9 +2,10 @@
 </script>
 
 <nav>
-  <a href=".">0</a>
-  <a href="1">1</a>
+  <a href=".">1</a>
   <a href="2">2</a>
+  <a href="3">3</a>
+  <a href="4">4</a>
 </nav>
 
 <style>
@@ -17,11 +18,11 @@
     font-size: 1.125rem;
     display: inline-box;
     padding: 0 8px 4px 8px;
-    color: #999;
+    color: #666;
     text-decoration: none;
   }
 
   a:hover {
-    background-color: #666;
+    background-color: #444;
   }
 </style>
