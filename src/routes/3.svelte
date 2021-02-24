@@ -1,3 +1,14 @@
+<script>
+  let paneVisible = [false];
+
+  function hotkeys(e) {
+    let key = e.key;
+    if (key === "A" || key === "a") paneVisible[0] = !paneVisible[0];
+  }
+</script>
+
+<svelte:window on:keydown|preventDefault={hotkeys} />
+
 <svelte:head>
   <title>Visual design</title>
 </svelte:head>
@@ -25,14 +36,22 @@
           <div class="block" style="background-color:#fff;" />
           <div class="block" style="background-color:#3cf;" />
         </div>
-        <div />
-        <div />
+        <div class="bgcol"
+          ><span class:visible={paneVisible[0]}
+            >Gris ardoise / <span class="en">Slate gray</span><br />aka
+            “International Epstein Gray”</span
+          ></div
+        >
+        <!-- <div /> -->
 
         <div>
           <div
             class="block"
             style="background: linear-gradient(90deg, #7db3af 0%, #7db3af 15%, #3cf 100%);"
-          />
+            ><span class:visible={paneVisible[0]}
+              >Bleu givre / <span class="en">Frosted blue</span></span
+            ></div
+          >
 
           <div class="half block" style="background-color:#72b7bb;" />
           <div class="half block" style="background-color:#7db3af;" />
@@ -44,7 +63,10 @@
           <div
             class="block"
             style="background: linear-gradient(90deg, #ff406c 0%, #ff406c 15%, #ff4633 100%);"
-          />
+            ><span class:visible={paneVisible[0]}
+              >Rouge grenadine / <span class="en">Grenadine red</span></span
+            ></div
+          >
 
           <div class="half block" style="background-color:#ff4256;" />
           <div class="half block" style="background-color:#a14353;" />
@@ -55,7 +77,10 @@
           <div
             class="block"
             style="background: linear-gradient(90deg, #888 0%, #888 15%, #aaa 100%);"
-          />
+            ><span class:visible={paneVisible[0]}
+              >Gris / <span class="en">Gray</span></span
+            ></div
+          >
           <div class="half block" style="background-color:#eee;" />
           <div class="half block" style="background-color:#ccc;" />
           <div class="half block" style="background-color:#999;" />
@@ -148,7 +173,7 @@
     gap: 48px 12px;
     grid-template-areas:
       "video video ."
-      ". . ."
+      ". bgcol bgcol"
       ". . ."
       ". . ."
       ". . ."
@@ -180,6 +205,20 @@
     width: 100%;
     height: 8vw;
     margin-bottom: 4px;
+    text-align: center;
+  }
+
+  .block > span {
+    opacity: 0;
+    color: #444450;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 8vw;
+    transition: 0.5s;
+  }
+
+  .en {
+    font-family: Source Serif Pro;
   }
 
   .half {
@@ -187,6 +226,33 @@
     float: left;
     width: 20%;
     margin-right: 4px;
+  }
+
+  .bgcol {
+    grid-area: bgcol;
+    color: #eee;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  .bgcol > span {
+    opacity: 0;
+    flex: 0 0 auto;
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: 0.5s;
+  }
+
+  .block > span.visible {
+    opacity: 1;
+  }
+  .bgcol > span.visible {
+    opacity: 0.75;
   }
 
   .video {
