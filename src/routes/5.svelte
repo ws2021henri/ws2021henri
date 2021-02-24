@@ -1,48 +1,65 @@
+<script>
+  import hljs from "highlight.js";
+  import { Highlight } from "svelte-highlight";
+  import { xml, json } from "svelte-highlight/languages";
+  import { a11yDark } from "svelte-highlight/styles";
+
+  import svelte from "../lib/svelte-highlight-svelte.js"; // Svelte syntax highlighting
+  import { data, logic } from "../lib/sample-data.js";
+
+  let paneVisible = [true, false, true];
+
+  function hotkeys(e) {
+    let key = e.key;
+    if (key === "A" || key === "a") paneVisible[0] = !paneVisible[0];
+    if (key === "Z" || key === "z") paneVisible[1] = !paneVisible[1];
+    if (key === "E" || key === "e") paneVisible[2] = !paneVisible[2];
+  }
+</script>
+
+<svelte:window on:keydown|preventDefault={hotkeys} />
+
 <svelte:head>
-  <title>What's new on HENRI?</title>
+  <title>Data, logic, output</title>
+  {@html a11yDark}
 </svelte:head>
 
 <div class="container">
-  <div class="content">
-    <h1 class="fr">“Quoi de neuf sur HENRI?”</h1>
-    <h1 class="en">“What's new on HENRI?”</h1>
-    <div class="small"><em>Télérama</em>, 18 février 2021</div>
+  <div class="pane" class:visible={paneVisible[0]}>
+    <div class="pane-header"
+      ><div>Data<br />(plain text file / JSON structure)</div></div
+    >
+    <div class="pane-content noscrollbar"
+      ><Highlight language={json} code={data} /></div
+    >
   </div>
+
+  <div class="pane" class:visible={paneVisible[1]}>
+    <div class="pane-header"><div>Logic<br />← Data into HTML →</div></div>
+    <div class="pane-content noscrollbar"
+      ><Highlight language={svelte} code={logic} /></div
+    >
+  </div>
+
+  <div class="pane" class:visible={paneVisible[2]}>
+    <div class="pane-header"><div>HENRI website</div></div>
+    <iframe
+      class="pane-content"
+      title=""
+      src="https://www.cinematheque.fr/henri/film/48361-la-chute-de-la-maison-usher-jean-epstein-1928/"
+    /></div
+  >
 </div>
 
 <style>
-  .container {
-    height: 99vh;
-    justify-content: center;
-    align-items: center;
+  .pane {
+    display: none;
   }
-  .content {
-    display: inline-block;
-    flex: 0 0 auto;
-    /* outline: solid 1px red; */
+  .pane.visible {
+    display: block;
   }
 
-  h1 {
-    padding: 0;
-    margin: 0;
-    font-weight: 500;
-    font-size: 5rem;
-    line-height: 7rem;
-  }
-
-  h1.fr {
-    transform: translateX(-8rem);
-  }
-
-  h1.en {
-    font-family: Source Serif Pro;
-    color: #ccc;
-    transform: translateX(8rem);
-  }
-
-  .small {
-    font-size: 1.5rem;
-    font-weight: 500;
-    text-align: right;
+  .pane:hover .pane-header {
+    background-color: #555 !important;
   }
 </style>

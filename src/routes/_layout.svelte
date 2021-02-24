@@ -8,6 +8,7 @@
     if (e.key === "3" || e.keyCode === 51) goto("3");
     if (e.key === "4" || e.keyCode === 52) goto("4");
     if (e.key === "5" || e.keyCode === 53) goto("5");
+    if (e.key === "6" || e.keyCode === 54) goto("6");
   }
 </script>
 

@@ -1,55 +1,61 @@
-<script>
-  let paneVisible = [true, false];
-
-  function hotkeys(e) {
-    let key = e.key;
-    if (key === "A" || key === "a") paneVisible[0] = !paneVisible[0];
-    if (key === "Z" || key === "z") paneVisible[1] = !paneVisible[1];
-  }
-</script>
-
-<svelte:window on:keydown|preventDefault={hotkeys} />
-
 <svelte:head>
-  <title>Visual design</title>
+  <title>All at once</title>
 </svelte:head>
 
 <div class="container">
-  <div class="pane" class:visible={paneVisible[0]}>
-    <div class="pane-header">Day one: homepage</div>
-    <div class="pane-content noscrollbar">
-      <img src="henri-day-one-home.jpg" alt="Homepage" />
-    </div>
-  </div>
-  <div class="pane" class:visible={paneVisible[1]}>
-    <div class="pane-header">Day one: film</div>
-    <div class="pane-content noscrollbar">
-      <img src="henri-day-one-film.jpg" alt="Film" />
-    </div>
+  <div class="content">
+    <h2
+      >HENRI vu comme un prototype implique de travailler en même temps :<br
+      /><span class="en"
+        >HENRI as a prototype involves working all at once on:</span
+      ></h2
+    >
+    <ul>
+      <li
+        >Conception visuelle et ergonomie / <span class="en"
+          >Visual design and user experience</span
+        >
+      </li>
+      <li style="margin-left: 1rem;"
+        >Architecture des données / <span class="en">Data architecture</span>
+      </li><li style="margin-left: 2rem;"
+        >Développement technique / <span class="en">Technical development</span
+        ></li
+      >
+      <li style="margin-left: 3rem;"
+        >Édition de contenu (texte et iconographie) / <span class="en"
+          >Content editing (texts and images)</span
+        ></li
+      >
+    </ul>
   </div>
 </div>
 
 <style>
-  /* .container {
-    background-color: #444450;
-  } */
-
-  .pane {
-    display: none;
+  .container {
+    height: 99vh;
+    justify-content: center;
+    align-items: center;
   }
-  .pane.visible {
-    display: block;
-  }
-
-  .pane-content {
-    position: relative;
-    display: block;
+  .content {
+    display: inline-block;
+    flex: 0 0 auto;
+    font-size: 2rem;
+    font-weight: 500;
   }
 
-  .pane-content > img {
-    display: block;
-    width: 45vw;
-    height: auto;
-    margin: 0 auto;
+  .en {
+    font-family: Source Serif Pro;
+    color: #ccc;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
   }
 </style>

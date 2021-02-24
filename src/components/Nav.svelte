@@ -7,6 +7,7 @@
   <a href="3">3</a>
   <a href="4">4</a>
   <a href="5">5</a>
+  <a href="6">6</a>
 </nav>
 
 <style>
