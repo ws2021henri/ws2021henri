@@ -23,8 +23,8 @@
         ></li
       >
       <li style="margin-left: 3rem;"
-        >Édition de contenu (texte et iconographie) / <span class="en"
-          >Content editing (texts and images)</span
+        >Édition de contenu (données, textes, images) / <span class="en"
+          >Content editing (data, texts and images)</span
         ></li
       >
     </ul>
