@@ -1,5 +1,5 @@
 <script>
-  let visible = [true];
+  let visible = [false];
 
   function hotkeys(e) {
     let key = e.key;
